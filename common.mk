@@ -1,12 +1,12 @@
 #Common headers
-common_includes := hardware/qcom/display-legacy/libgralloc
-common_includes += hardware/qcom/display-legacy/libgenlock
-common_includes += hardware/qcom/display-legacy/liboverlay
-common_includes += hardware/qcom/display-legacy/libcopybit
-common_includes += hardware/qcom/display-legacy/libqdutils
-common_includes += hardware/qcom/display-legacy/libhwcomposer
-common_includes += hardware/qcom/display-legacy/libexternal
-common_includes += hardware/qcom/display-legacy/libqservice
+common_includes := $(call project-path-for,qcom-display)/$(TARGET_BOARD_PLATFORM)/libgralloc
+common_includes += $(call project-path-for,qcom-display)/$(TARGET_BOARD_PLATFORM)/libgenlock
+common_includes += $(call project-path-for,qcom-display)/$(TARGET_BOARD_PLATFORM)/liboverlay
+common_includes += $(call project-path-for,qcom-display)/$(TARGET_BOARD_PLATFORM)/libcopybit
+common_includes += $(call project-path-for,qcom-display)/$(TARGET_BOARD_PLATFORM)/libqdutils
+common_includes += $(call project-path-for,qcom-display)/$(TARGET_BOARD_PLATFORM)/libhwcomposer
+common_includes += $(call project-path-for,qcom-display)/$(TARGET_BOARD_PLATFORM)/libexternal
+common_includes += $(call project-path-for,qcom-display)/$(TARGET_BOARD_PLATFORM)/libqservice
 
 common_header_export_path := qcom/display
 
