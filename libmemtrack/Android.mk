@@ -22,5 +22,5 @@ LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/hw
 LOCAL_C_INCLUDES += hardware/libhardware/include
 LOCAL_SHARED_LIBRARIES := liblog
 LOCAL_SRC_FILES := memtrack_msm.c kgsl.c
-LOCAL_MODULE := memtrack.$(TARGET_BOARD_PLATFORM)
+LOCAL_MODULE := memtrack.msm7x30
 include $(BUILD_SHARED_LIBRARY)

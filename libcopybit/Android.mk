@@ -21,7 +21,7 @@ LOCAL_COPY_HEADERS            := copybit.h copybit_priv.h
 #Copy the headers regardless of whether copybit is built
 include $(BUILD_COPY_HEADERS)
 
-LOCAL_MODULE                  := copybit.$(TARGET_BOARD_PLATFORM)
+LOCAL_MODULE                  := copybit.msm7x30
 LOCAL_MODULE_PATH             := $(TARGET_OUT_SHARED_LIBRARIES)/hw
 LOCAL_MODULE_TAGS             := optional
 LOCAL_C_INCLUDES              := $(common_includes) $(kernel_includes)
