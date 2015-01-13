@@ -173,7 +173,7 @@ ExternalDisplay::ExternalDisplay(hwc_context_t* ctx):mFd(-1),
     // disable HPD at start, it will be enabled later
     // when the display powers on
     // This helps for framework reboot or adb shell stop/start
-    //writeHPDOption(0);
+    writeHPDOption(0);
 
     // for HDMI - retreive all the modes supported by the driver
     if(mHdmiFbNum != -1) {
@@ -238,7 +238,7 @@ void ExternalDisplay::setEDIDMode(int resMode) {
 
 void ExternalDisplay::setHPD(uint32_t startEnd) {
     ALOGD_IF(DEBUG,"HPD enabled=%d", startEnd);
-    //writeHPDOption(startEnd);
+    writeHPDOption(startEnd);
 }
 
 void ExternalDisplay::setActionSafeDimension(int w, int h) {
