@@ -78,7 +78,7 @@
 #endif
 
 #define FB_DEVICE_TEMPLATE "/dev/graphics/fb%u"
-#define NUM_FB_DEVICES 3
+#define NUM_FB_DEVICES 1
 
 namespace overlay {
 
