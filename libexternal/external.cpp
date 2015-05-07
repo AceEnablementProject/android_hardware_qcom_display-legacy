@@ -665,6 +665,7 @@ int ExternalDisplay::getExtFbNum(int &fbNum) {
 
 bool ExternalDisplay::writeHPDOption(int userOption) const
 {
+#if 0
     bool ret = true;
     char sysFsHPDFilePath[MAX_SYSFS_FILE_PATH];
     snprintf(sysFsHPDFilePath ,sizeof(sysFsHPDFilePath),
@@ -688,6 +689,8 @@ bool ExternalDisplay::writeHPDOption(int userOption) const
         close(hdmiHPDFile);
     }
     return ret;
+#endif
+    return false;
 }
 
 void ExternalDisplay::setDpyWfdAttr() {
